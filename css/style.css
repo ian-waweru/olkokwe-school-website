@@ -507,25 +507,10 @@ section {
 
 .hero-background {
     position: absolute;
-
     inset: 0;
-
-    /*
-        Temporary background.
-
-        Later this will become the actual
-        Olkokwe school photograph.
-    */
-
     background:
-        linear-gradient(
-            135deg,
-            var(--primary-dark),
-            var(--primary)
-        );
-
-    background-size: cover;
-    background-position: center;
+        url("../images/gallery/campus.webp") center / cover no-repeat,
+        linear-gradient(135deg, var(--primary-dark), var(--primary));
 }
 
 
@@ -3039,4 +3024,30 @@ section {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+
+/* ---------- ABOUT PHOTO ---------- */
+.about-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ---------- SKIP LINK ---------- */
+.skip-link {
+    position: absolute;
+    left: 12px;
+    top: -60px;
+    z-index: 1000;
+    padding: 10px 16px;
+    background: var(--gold);
+    color: var(--primary-dark);
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+}
+.skip-link:focus {
+    top: 12px;
 }
