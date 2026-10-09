@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://ian-waweru.github.io/olkokwe-school-website/sitemap.xml
